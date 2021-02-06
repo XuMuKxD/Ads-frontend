@@ -53,6 +53,7 @@
 
 .Modal__window{
     position: fixed;
+    
     top: 0;
     bottom: 0;
     left: 0;
@@ -62,9 +63,21 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    display: none;
 }
+
+.Modal__mask{
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.185);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+}
+
 .Modal__form{
+    z-index: 1;
     padding: 24px;
     background-color: white;
     display: inline-block;
